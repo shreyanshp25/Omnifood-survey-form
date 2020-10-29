@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: white;
+    color: darkgray;
+    font-family: 'lato',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+.row {
+    width: 1140px;
+    margin: 0 auto;
+  
+}
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.57) , rgba(0, 0, 0, 0.57)),  url(images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+h1{
+    margin: 0;
+    font-size: 240%;
+    font-weight:300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+
+/* FORMATTING THE AFTER ELEMENTS-----------------------*/
+
+
+h2{
+    font-size: 200%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 145%;
+    word-spacing: 2px;
+    text-align: center;
+    display: block;
+    margin-bottom: 8px;
+}
+h2:after{
+    content: " ";
+    width: 100px;
+    background-color: #cf6d17;
+    display: block;
+    height: 2px;
+    margin: 30px 45%;
+}
+h2:hover,
+h3:hover{
+    box-shadow: none;
+}
+
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: none;
+}
+.hero-text-box:hover,
+.underpara:hover{
+    box-shadow: none;
+}
+.btn{
+    border: 1px solid #cf6d17;
+    padding: 2px;
+    border-radius: 200px;
+    text-decoration: none;
+}
+.btn_first:link,
+.btn_first:visited{
+    color: #fff;
+    background-color: #e67e22;
+    padding: 8px;
+    margin-right: 4px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn_second:link,
+.btn_second:visited{
+    color: #fff;
+    padding: 8px;    
+}
+.btn_first:hover,
+.btn_first:active{
+    background-color: #cf6d17;
+    color: white;
+}
+.btn_second:hover,
+.btn_second:active{
+    color: white;
+    background-color: #cf6d17;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.logo{
+    height: 100px;
+    width: auto;
+    margin-top: 20px;
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 60px; 
+    
+}
+/* COMMANDS TO REMOVE WHITE LINE, BLUE LINE ON THE TOP OF THE BUTTON AND LINK */
+.topbar *:focus{
+    outline: 0 none;
+}
+/*-----------------------------------*/
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    color: #cf6d17;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    font-size: 90%; /* 18px=18/20% */
+    text-transform: uppercase;
+    padding: 8px 0;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #cf6d17;
+}
+
+
+.copy-main {
+    padding: 40px 0;
+    
+}
+
+.main-para {
+    font-size: 120%;
+    letter-spacing: 145%;
+    word-spacing: 2px;
+    font-weight: 200;
+    text-align: center;
+    margin: 0 15%;
+}
+.main-para:hover{
+    box-shadow: none;
+}
+h3{
+    font-size: 120%;
+    margin: 20px 0;
+    padding-right:  10px;
+    
+}
+.underpara{
+    text-align: justify;
+    font-size: 100%;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    padding-right: 5px;
+}
+.sml-icn{
+    font-size: 300%;
+    color:  #cf6d17;
+}
+
+
+.meal-ph {
+    width: 100%;
+    list-style: none;
+    background-color: black;
+}
+
+figure {
+    width: 25%;
+    float: left;
+    margin: 0;
+    overflow: hidden;
+}
+.meal-ph img {border: 0;}
+.meal-ph img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    opacity: 70%;
+    transition: opacity 0.5s, transform 0.5s;
+}
+.meal-ph img:hover{
+    opacity: 100%;
+    transform: scale(1.09);
+    
+}
+.favourite-meal {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.iphone {
+    width: 50%;
+    height: auto;
+    margin-left: 70px;
+}
+
+.how-it-works {
+        background-color: #e0e0e0;
+        padding-top: 60px;
+    display: none;
+}
+
+/* CLEARFIX CLASS FOR DIVIDING THE BOX WHEN THE MARGIN OVERLAPS-------*/
+
+.clearfix{zoom:1}
+.clearfix:after{
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.step-parent div{
+    border: 2px solid #cf6d17;
+    border-radius: 50%;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    font-size: 150%;
+    color: #cf6d17;
+    text-align: center;
+    margin: 25px;
+    padding: 7px;
+    float: left;
+    overflow: hidden;
+    
+}
+.work-step{
+    float: left;
+}
+.clearfixes:after{
+    clear: both;
+    display: table;
+    content: " ";
+    
+}
+.para{
+    padding-top: 26px;
+}
+.works-step{
+    padding-bottom: 50px;
+    position: relative;
+}
+
+
+
+.playstr-img {
+    position: absolute;
+    right: 7px;
+    top: 250px;
+    display: block;
+    
+}
+
+.cities img{
+    height: 260px;
+    width: 260px;
+    opacity: 70%;
+    background-color: black;
+}
+.cities img:hover{
+    opacity: 100%;
+    transition: opacity 1s;
+    overflow: hidden;
+    
+}
+
+
+.new-icn {
+    font-size: 120%;
+    color: #cf6d17;
+    vertical-align: middle;
+    line-height: 145%;
+    margin-top: -5px;
+    display: inline-block;
+
+}
+
+a:link,
+a:active{
+    text-decoration: none;
+    color: #cf6d17;
+    border-bottom: 2px solid #cf6d17;
+    transition: border-bottom 0.5s, color 0.5s;
+    padding-bottom: 2%; 
+}
+a:hover,
+a:visited{
+    border-bottom: 2px solid transparent;
+    color: rgba(108, 104, 104, 0.75);
+}
+.testimonial{
+    background-image: linear-gradient(rgba(105, 105, 105, 0.76),rgba(105, 105, 105, 0.76)), url(images/back-customers.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 2%;
+    color: white;
+}
+blockquote{
+    padding-bottom: 2%;
+    word-spacing: 0.5px;
+    letter-spacing: 0.2px;
+    
+}
+cite{
+    display: inline-block;
+}
+
+cite img{
+    border-radius: 50%;
+    vertical-align: middle;
+    height: 75px;
+    display: inline-block;
+    
+}
+
+.one {
+    padding-top: 6%;
+}
+
+.three {
+    padding-top: 6%;
+}
+
